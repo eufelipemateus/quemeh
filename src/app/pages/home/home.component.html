@@ -1,0 +1,10 @@
+<div class="container">
+  <div class="search">
+    <h1>Quem eh?</h1>
+    <span>Buscar dominio</span>
+    <form action="search"  class="form">
+      <input (keyup)="changeSearch($event)"  placeholder="example.com" name="q" id="query" type="text">
+      <button type="submit"  [disabled]="buttonDisabled" >Buscar</button>
+    </form>
+  </div>
+</div>
